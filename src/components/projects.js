@@ -15,7 +15,7 @@ const Projects = () => (
       <Project Img={ImgCoral} githubLink="https://github.com/EdinK1/coral" />
       <Project
         Img={ImgBoom}
-        viewLink="https://boom.red.academy"
+        viewLink="https://boom.academy.red/"
         githubLink="https://github.com/EdinK1/boomtown"
       />
       <Project

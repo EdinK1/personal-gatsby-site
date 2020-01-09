@@ -6,7 +6,9 @@ import GithubBtn from "./githubBtn"
 const Project = ({ Img, viewLink, githubLink }) => (
   <li className="project">
     <Img />
-    <ProjectBtn url={viewLink} target="_blank" rel="noopener noreferrer" />
+    {viewLink ? (
+      <ProjectBtn url={viewLink} target="_blank" rel="noopener noreferrer" />
+    ) : null}
     {githubLink ? (
       <GithubBtn url={githubLink} target="_blank" rel="noopener noreferrer" />
     ) : null}
