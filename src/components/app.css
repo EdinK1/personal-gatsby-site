@@ -12,6 +12,18 @@ body {
   background: linear-gradient(to right, #ec2f4b, #009fff);
 }
 
+.danger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: "#f00";
+  background: rgb(255, 0, 0);
+  color: #fff;
+  font-weight: 800;
+  z-index: 9999;
+}
+
 .social {
   position: fixed;
   top: 50%;
