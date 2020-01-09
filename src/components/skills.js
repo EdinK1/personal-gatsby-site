@@ -13,6 +13,7 @@ import {
   FaPhp,
   FaNode,
 } from "react-icons/fa"
+import { DiMeteorfull } from "react-icons/di"
 
 import SkillSet from "./skillSet"
 
@@ -32,7 +33,7 @@ const Skills = () => (
         title="Tools/CMS"
         skills={[FaGithub, FaGit, FaGulp, FaNpm, FaWordpress]}
       />
-      <SkillSet title="Back End" skills={[FaPhp, FaNode]} />
+      <SkillSet title="Back End" skills={[FaNode, DiMeteorfull, FaPhp]} />
     </section>
   </section>
 )

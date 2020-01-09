@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageOmni = () => {
+const ImageCoral = () => {
   const data = useStaticQuery(graphql`
     query {
-      fileName: file(relativePath: { eq: "omni.jpg" }) {
+      fileName: file(relativePath: { eq: "coral.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -19,9 +19,9 @@ const ImageOmni = () => {
     <Img
       className="project-img"
       fluid={data.fileName.childImageSharp.fluid}
-      alt="Omni project"
+      alt="Coral project"
     />
   )
 }
 
-export default ImageOmni
+export default ImageCoral

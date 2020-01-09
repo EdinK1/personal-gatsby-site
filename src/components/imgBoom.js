@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageInsta = () => {
+const ImageBoom = () => {
   const data = useStaticQuery(graphql`
     query {
-      fileName: file(relativePath: { eq: "instanews.jpg" }) {
+      fileName: file(relativePath: { eq: "boomtown.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -19,9 +19,9 @@ const ImageInsta = () => {
     <Img
       className="project-img"
       fluid={data.fileName.childImageSharp.fluid}
-      alt="Instanews project"
+      alt="Boomtown project"
     />
   )
 }
 
-export default ImageInsta
+export default ImageBoom
